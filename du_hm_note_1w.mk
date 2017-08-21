@@ -4,7 +4,7 @@ PRODUCT_RELEASE_NAME := hm_note_1w
 LOCAL_PATH := device/Xiaomi/hm_note_1w
 
 # Inherit some common omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Inherit some apn & spn stuff.
 PRODUCT_COPY_FILES += \
@@ -16,7 +16,7 @@ $(call inherit-product, device/Xiaomi/hm_note_1w/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hm_note_1w
-PRODUCT_NAME := omni_hm_note_1w
+PRODUCT_NAME := du_hm_note_1w
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := hm_note_1w
 PRODUCT_MANUFACTURER := Xiaomi
