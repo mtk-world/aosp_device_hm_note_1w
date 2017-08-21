@@ -51,7 +51,7 @@
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <!-- Boolean indicating whether we want button brightness support -->
-    <bool name="config_button_brightness_support">true</bool>
+    <add-resource type="bool" name="config_button_brightness_support">true</add-resource>
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">true</bool>
