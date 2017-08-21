@@ -12,7 +12,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
 # Inherit device configuration
-$(call inherit-product, device/Xiaomi/hm_note_1w/device.mk)
+$(call inherit-product, device/Xiaomi/hm_note_1w/device_hm_note_1w.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hm_note_1w
