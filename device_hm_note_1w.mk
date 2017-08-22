@@ -69,17 +69,17 @@ PRODUCT_PACKAGES += libmt6592
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.mt6592 \
-    init.recovery.mt6592.rc \
-    init.mt6592.rc \
-    init.modem.rc \
-    ueventd.mt6592.rc \
-    init.mt6592.usb.rc \
-    enableswap.sh \
-    factory_init.rc \
-    twrp.fstab
+    
+#Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.mt6592:root/fstab.mt6592 \
+    $(LOCAL_PATH)/rootdir/init.mt6592.rc:root/init.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6592.rc:root/init.recovery.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6592.usb.rc:root/init.mt6592.usb.rc \
+    $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(LOCAL_PATH)/rootdir/ueventd.mt6592.rc:root/ueventd.mt6592.rc \
+    $(LOCAL_KERNEL):kernel
 
 # Kernel
 PRODUCT_COPY_FILES += \
